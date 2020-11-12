@@ -17,7 +17,7 @@ export default class FirstPage extends Component {
                             </TabPane>
                             <TabPane tab="Tab 2" key="2">
                             <div><IndexPagec typekey='2' /></div> 
-                            <div style={{width:'100%',height:'5rem',background:'#999'}}>lolololo</div>
+                            <div style={{width:'100%',height:'5rem',background:'#999'}}>lololodlo</div>
                             </TabPane>
                             <TabPane tab="Tab 3" key="3">
                             <div><IndexPagec typekey='3' /></div>
