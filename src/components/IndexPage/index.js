@@ -151,6 +151,15 @@ export default class index extends Component {
             columns: this.setColumns2(),
             dataSource: this.setDataSource(),
         }
+        const arr = ['tom','tom2','tom3'];
+        const obj = {};
+        arr.forEach(item => {
+          obj[item] = '';
+        })
+
+        console.info(obj,66);
+
+
         const text = '跨站脚本攻击(Cross Site Scripting)，为了不和层叠样式表(Cascading Style Sheets, CSS)的缩写混淆，故将跨站脚本攻击缩写为XSS。';
         return (
                 <React.Fragment>

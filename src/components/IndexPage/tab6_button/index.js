@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import moment from 'moment';
 import { Button, Tabs } from 'antd'
 const { TabPane } = Tabs;
 
@@ -39,6 +40,17 @@ export default class AddCusGroup extends Component {
         } catch(e) { // eslint-disable-line
           // do nothing
         }
+        const timer = '2020-05-19 17:16:16';
+        const Now = moment().format('YYYY-MM-DD HH:mm:ss'); // 当前时间
+        const EOTs = moment(Now).diff(timer, 'seconds', true); // 时差--秒
+        const EOTm = moment(Now).diff(timer, 'minutes', true); // 时差--分钟
+        const EOTd = moment(Now).diff(timer, 'days', true); // 时差--天
+        const EOTy = moment(Now).diff(timer, 'years', true); // 时差--年
+        
+        console.info(moment(timer).format('YYYYMMDD'), 123);
+        console.info(moment().format('YYYYMMDD') - moment(timer).format('YYYYMMDD'), 999);
+        console.info(EOTm,111);
+        console.info(EOTd,222);
         return (
             <div>
                 加法器测试：
